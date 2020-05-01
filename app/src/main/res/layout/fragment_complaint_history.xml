@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#F0F0F0"
+    tools:context=".fragments.ComplaintHistory">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:src="@drawable/ic_bill"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:layout_height="80dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Complaints"
+            android:textSize="16sp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:overScrollMode="never"
+            android:id="@+id/complaint_rcv"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/element_complaint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

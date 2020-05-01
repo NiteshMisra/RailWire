@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    style="?android:attr/spinnerItemStyle"
+    android:textSize="13sp"
+    android:fontFamily="@font/poppins"
+    android:padding="10dp"
+    android:textColor="@color/colorPrimaryDark"
+    android:background="@drawable/spinner_drop_background"
+    android:layout_height="wrap_content">
+
+</TextView>

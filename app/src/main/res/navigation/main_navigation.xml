@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="in.indilabz.tikona.fragments.main.Home"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_home"/>
+
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="in.indilabz.tikona.fragments.main.Account"
+        android:label="Account Information"
+        tools:layout="@layout/fragment_account"/>
+
+    <fragment
+        android:id="@+id/contactUsFragment"
+        android:name="in.indilabz.tikona.fragments.ContactUs"
+        android:label="24*7 Support"
+        tools:layout="@layout/fragment_contact_us"/>
+
+    <fragment
+        android:id="@+id/paymentHisFragment"
+        android:name="in.indilabz.tikona.fragments.PaymentHistory"
+        android:label="Payment History"
+        tools:layout="@layout/fragment_payment_history"/>
+
+    <fragment
+        android:id="@+id/complaintHisFragment"
+        android:name="in.indilabz.tikona.fragments.ComplaintHistory"
+        android:label="Complaint History"
+        tools:layout="@layout/fragment_complaint_history"/>
+
+    <fragment
+        android:id="@+id/referFragment"
+        android:name="in.indilabz.tikona.fragments.ReferEarn"
+        android:label="Refer &amp; Earn"
+        tools:layout="@layout/fragment_refer_earn"/>
+
+    <fragment
+        android:id="@+id/billPayFragment"
+        android:name="in.indilabz.tikona.fragments.BillPay"
+        android:label="Pay Bill"
+        tools:layout="@layout/fragment_bill_pay"/>
+
+    <fragment
+        android:id="@+id/serviceFragment"
+        android:name="in.indilabz.tikona.fragments.ComplaintService"
+        android:label="Complaint Service"
+        tools:layout="@layout/fragment_complaint"/>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="in.indilabz.tikona.fragments.main.Profile"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile"/>
+
+    <fragment
+        android:id="@+id/billFragment"
+        android:name="in.indilabz.tikona.fragments.main.Bill"
+        android:label="Bill Information"
+        tools:layout="@layout/fragment_bill"/>
+
+    <fragment
+        android:id="@+id/myRequestFragment"
+        android:name="in.indilabz.tikona.fragments.main.MyRequest"
+        android:label="My Request Status"
+        tools:layout="@layout/fragment_my_request"/>
+
+</navigation>

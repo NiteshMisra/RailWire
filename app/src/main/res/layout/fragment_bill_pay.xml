@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    tools:context=".fragments.BillPay">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:src="@drawable/ic_clock"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_height="80dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Quick Bill Pay"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/poppins"
+        android:text="Enter Payment Amount"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="12sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginStart="20dp"
+        android:padding="8dp"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:hint="0."
+        android:inputType="number"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/spinner_background"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/poppins"
+        android:text="Select Payment Type"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="New Installation Payment"
+            android:paddingStart="5dp"
+            android:paddingEnd="0dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/poppins"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:paddingEnd="5dp"
+            android:buttonTint="@color/colorPrimary"
+            android:paddingStart="0dp"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginStart="25dp"
+        android:background="#BEBEBE"
+        android:layout_marginEnd="30dp"
+        android:layout_height="0.6dp"/>
+
+    <RelativeLayout
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Recharge"
+            android:paddingStart="5dp"
+            android:paddingEnd="0dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/poppins"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:paddingEnd="5dp"
+            android:buttonTint="@color/colorPrimary"
+            android:paddingStart="0dp"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginStart="25dp"
+        android:background="#BEBEBE"
+        android:layout_marginEnd="30dp"
+        android:layout_height="0.6dp"/>
+
+    <RelativeLayout
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Other Payment"
+            android:paddingStart="5dp"
+            android:paddingEnd="0dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/poppins"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:paddingEnd="5dp"
+            android:buttonTint="@color/colorPrimary"
+            android:paddingStart="0dp"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginStart="25dp"
+        android:background="#BEBEBE"
+        android:layout_marginEnd="30dp"
+        android:layout_height="0.6dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/greenAppColour"
+        android:fontFamily="@font/poppins_semibold"
+        android:padding="12dp"
+        android:text="Pay Online"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

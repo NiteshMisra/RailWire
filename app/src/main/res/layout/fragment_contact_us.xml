@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ContactUs">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:src="@drawable/ic_24_7"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_height="80dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Contact Us"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="@font/poppins"
+        android:text="We take our commitment to our users seriously.\nIf you need our help with your user account, have questions about how to use the platform or are experiencing technical difficulties, please do not hesitate to contact us."
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="9999999999"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginStart="15dp"
+        android:drawableStart="@drawable/ic_call"
+        android:drawablePadding="15dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="support@gmail.com"
+        android:layout_marginStart="15dp"
+        android:drawableStart="@drawable/ic_email"
+        android:clickable="true"
+        android:focusable="true"
+        android:drawablePadding="15dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+
+</LinearLayout>
