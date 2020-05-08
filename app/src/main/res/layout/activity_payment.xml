@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0F0F0"
+    tools:context=".empActivity.Payment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/main_background"
+        android:layout_height="?attr/actionBarSize">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            app:title="@string/app_name"
+            app:titleTextColor="#FFFFFF"
+            android:layout_height="match_parent"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Enter Payment Amount"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="Amount"
+                android:textSize="14sp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/poppins"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textColorHint="#777777"
+                android:inputType="text"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="#777777"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_height="0.5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Select Payment Type"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Cheque"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="0dp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/poppins"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:paddingEnd="5dp"
+                    android:buttonTint="@color/colorPrimary"
+                    android:paddingStart="0dp"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginStart="25dp"
+                android:background="#BEBEBE"
+                android:layout_marginEnd="30dp"
+                android:layout_height="0.6dp"/>
+
+            <RelativeLayout
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Cash"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="0dp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/poppins"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:paddingEnd="5dp"
+                    android:buttonTint="@color/colorPrimary"
+                    android:paddingStart="0dp"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginStart="25dp"
+                android:background="#BEBEBE"
+                android:layout_marginEnd="30dp"
+                android:layout_height="0.6dp"/>
+
+            <RelativeLayout
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Online Payment"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="0dp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/poppins"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:paddingEnd="5dp"
+                    android:buttonTint="@color/colorPrimary"
+                    android:paddingStart="0dp"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginStart="25dp"
+                android:background="#BEBEBE"
+                android:layout_marginEnd="30dp"
+                android:layout_height="0.6dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Remark"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="25dp"
+                android:background="#FFFFFF"
+                android:textColor="#000000"
+                android:gravity="start"
+                android:maxLength="85"
+                android:hint="Additional remark"
+                android:padding="10dp"
+                android:fontFamily="@font/poppins"
+                android:textSize="14sp"
+                android:layout_height="100dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="@color/greenAppColour"
+                android:fontFamily="@font/poppins_semibold"
+                android:padding="12dp"
+                android:text="Pay Online"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

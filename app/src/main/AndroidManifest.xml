@@ -13,6 +13,10 @@
         <activity android:name=".activity.MainActivity"
             android:windowSoftInputMode="stateHidden|adjustPan"/>
         <activity android:name=".activity.Notifications" />
+        <activity android:name=".empActivity.ComplaintDetail" />
+        <activity android:name=".empActivity.EmpMainActivity" />
+        <activity android:name=".empActivity.Payment" />
+        <activity android:name=".empActivity.UserRegistration" />
         <activity
             android:name=".activity.ForgotPassword"
             android:windowSoftInputMode="stateHidden|adjustPan" />

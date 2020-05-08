@@ -2,6 +2,7 @@ package `in`.indilabz.tikona.activity
 
 import `in`.indilabz.tikona.INDIPreferences
 import `in`.indilabz.tikona.R
+import `in`.indilabz.tikona.empActivity.EmpMainActivity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -15,9 +16,17 @@ class SplashActivity : AppCompatActivity() {
 
         Handler().postDelayed({
             if (INDIPreferences.session()){
-                val intent = Intent(this@SplashActivity,MainActivity::class.java)
-                intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
-                startActivity(intent)
+                if (INDIPreferences.isUser()){
+                    INDIPreferences.session(true)
+                    val intent =Intent(this,MainActivity::class.java)
+                    intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+                    startActivity(intent)
+                }else{
+                    INDIPreferences.session(true)
+                    val intent =Intent(this, EmpMainActivity::class.java)
+                    intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+                    startActivity(intent)
+                }
             }else{
                 val intent = Intent(this@SplashActivity,Login::class.java)
                 intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
