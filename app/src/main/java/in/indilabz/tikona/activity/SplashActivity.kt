@@ -2,17 +2,21 @@ package `in`.indilabz.tikona.activity
 
 import `in`.indilabz.tikona.INDIPreferences
 import `in`.indilabz.tikona.R
+import `in`.indilabz.tikona.databinding.ActivitySplashBinding
 import `in`.indilabz.tikona.empActivity.EmpMainActivity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import androidx.databinding.DataBindingUtil
 
 class SplashActivity : AppCompatActivity() {
+    
+    private lateinit var binding : ActivitySplashBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_splash)
+        binding = DataBindingUtil.setContentView(this,R.layout.activity_splash)
 
         Handler().postDelayed({
             if (INDIPreferences.session()){
