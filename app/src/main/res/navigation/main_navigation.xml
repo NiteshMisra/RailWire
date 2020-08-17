@@ -72,4 +72,10 @@
         android:label="My Request Status"
         tools:layout="@layout/fragment_my_request"/>
 
+    <fragment
+        android:id="@+id/couponFragment"
+        android:name="in.indilabz.tikona.fragments.CouponFragment"
+        android:label="Offers"
+        tools:layout="@layout/fragment_coupon"/>
+
 </navigation>
