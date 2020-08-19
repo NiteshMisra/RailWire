@@ -1,6 +1,7 @@
 package `in`.indilabz.tikona.fragments
 
 import `in`.indilabz.tikona.R
+import `in`.indilabz.tikona.activity.MainActivity
 import `in`.indilabz.tikona.adapter.CouponAdapter
 import `in`.indilabz.tikona.databinding.FragmentCouponBinding
 import android.os.Bundle
@@ -37,5 +38,11 @@ class CouponFragment : Fragment() {
         val couponAdapter = CouponAdapter(list)
         binding.couponRcv.adapter = couponAdapter
         couponAdapter.notifyDataSetChanged()
+
+        binding.proceedBtn.setOnClickListener {
+            // if you have to pass something to the next fragment
+            // then you can use sharedPreference for that
+            (context as MainActivity).change(R.id.paymentOverviewFrag)
+        }
     }
 }

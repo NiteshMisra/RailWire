@@ -78,4 +78,10 @@
         android:label="Offers"
         tools:layout="@layout/fragment_coupon"/>
 
+    <fragment
+        android:id="@+id/paymentOverviewFrag"
+        android:name="in.indilabz.tikona.fragments.PaymentOverView"
+        android:label=""
+        tools:layout="@layout/fragment_payment_over_view"/>
+
 </navigation>

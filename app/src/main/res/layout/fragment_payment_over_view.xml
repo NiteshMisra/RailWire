@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".fragments.PaymentOverView">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="70dp"
+            android:orientation="vertical">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="match_parent"
+                app:lottie_rawRes="@raw/credit_card"
+                app:lottie_loop="false"
+                android:layout_marginTop="15dp"
+                app:lottie_autoPlay="true"
+                android:layout_height="200dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Installation Payment"
+                android:fontFamily="@font/roboto"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transaction"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amount to be paid : \u20B91100"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="#636363"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You Save : \u20B9100"
+                android:fontFamily="@font/roboto_medium"
+                android:layout_marginStart="20dp"
+                android:textColor="#636363"
+                android:textSize="13sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="25dp"
+                android:background="#F0F0F0"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Applied Coupon"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/v1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/applyBtn"
+                    android:layout_toStartOf="@id/applyBtn"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/coupon_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="LUCKYUPI"
+                        android:textAllCaps="true"
+                        android:textColor="#000000"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="30dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="Get Life Insurance cover of 5 Lakhs from HDFC life for a month"
+                        android:textColor="#777777"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/applyBtn"
+                    android:layout_width="wrap_content"
+                    app:layout_constraintTop_toTopOf="@id/v1"
+                    app:layout_constraintBottom_toBottomOf="@id/v1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="Applied"
+                    android:layout_marginEnd="25dp"
+                    android:textColor="#43c6ac"
+                    app:strokeWidth="1dp"
+                    app:strokeColor="#43c6ac"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/v1"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="#F0F0F0"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/proceedBtn"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        app:backgroundTint="#43c6ac"
+        android:padding="15dp"
+        android:text="Proceed to Pay \u20B91100"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
